@@ -15,7 +15,8 @@ const app = express();
 // --- CORS Configuration ---
 const allowedOrigins = [
   'http://localhost:8080', // Admin Portal (Vite default)
-  'http://localhost:8081', // Student Portal (Next available Vite port)
+  'http://localhost:8081',
+  'https://eventide-portal.vercel.app' // Student Portal (Next available Vite port)
 ];
 
 app.use(cors({
